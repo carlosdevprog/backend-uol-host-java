@@ -112,8 +112,8 @@
                 listaCadastros.innerHTML = ""; // Limpa a lista
                 data.forEach(pessoa => {
                     const item = document.createElement("li");
-                    item.textContent = `Nome: ${pessoa.name} - Email: ${pessoa.email} -
-                    Telefone: ${pessoa.phoneNumber} - Codinome: ${pessoa.codiname} - Grupo: ${pessoa.groupType}`;
+                    item.textContent = `Nome: ${pessoa.name} | Email: ${pessoa.email} |
+                    Telefone: ${pessoa.phoneNumber} | Codinome: ${pessoa.codiname} | Grupo: ${pessoa.groupType}`;
                     listaCadastros.appendChild(item);
                 });
             })

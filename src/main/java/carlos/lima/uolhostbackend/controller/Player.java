@@ -4,7 +4,10 @@ import carlos.lima.uolhostbackend.model.GroupType;
 import carlos.lima.uolhostbackend.model.dtos.PlayerDto;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 @Entity(name = "players")
 @Table(name = "players")

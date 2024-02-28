@@ -9,6 +9,7 @@ import java.util.NoSuchElementException;
 @RestControllerAdvice
 public class ControllerExceptionHandler {
 
+    @SuppressWarnings("rawtypes")
     @ExceptionHandler(NoSuchElementException.class)
     public ResponseEntity threatNoSuchElementException(NoSuchElementException exception) {
         ExceptionDto dto = new ExceptionDto("Essa lista não possui mais usuários disponíveis.", "400");
